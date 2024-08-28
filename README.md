@@ -61,7 +61,7 @@ Replace **MIT** and **SyncArcs** with the appropriate license and your informati
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | SyncArcs/labels/google | 1.0.1 |
+| <a name="module_labels"></a> [labels](#module\_labels) | SyncArcs/labels/google | 1.0.0 |
 
 ## Resources
 
