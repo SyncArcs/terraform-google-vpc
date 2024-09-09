@@ -2,13 +2,13 @@ data "google_client_config" "current" {
 }
 
 module "labels" {
-  source      = "SyncArcs/labels/google"
-  version     = "1.0.0"
+  source      = "git::https://github.com/SyncArcs/terraform-google-labels.git?ref=v1.0.0"
   name        = var.name
   environment = var.environment
   label_order = var.label_order
   managedby   = var.managedby
   repository  = var.repository
+
 }
 
 resource "google_compute_network" "vpc" {
@@ -24,3 +24,5 @@ resource "google_compute_network" "vpc" {
   delete_default_routes_on_create           = var.delete_default_routes_on_create
   network_firewall_policy_enforcement_order = var.network_firewall_policy_enforcement_order
 }
+
+

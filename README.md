@@ -22,7 +22,7 @@ To get started, make sure you have configured your GCP provider. You can use the
 ## Example: vpc
 ```hcl
 module "vpc" {
-  source                                    = "SyncArcs/vpc/google"
+  source                                    = "git::https://github.com/SyncArcs/terraform-google-vpc.git?ref=v1.0.0"
   version                                   = "1.0.1"
   name                                      = "app"
   environment                               = "test"
@@ -61,7 +61,7 @@ Replace **MIT** and **SyncArcs** with the appropriate license and your informati
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | SyncArcs/labels/google | 1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/SyncArcs/terraform-google-labels.git | v1.0.0 |
 
 ## Resources
 
